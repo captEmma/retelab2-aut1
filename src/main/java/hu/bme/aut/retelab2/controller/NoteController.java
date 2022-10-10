@@ -31,7 +31,7 @@ public class NoteController {
 
     @PostMapping
     public Note create(@RequestBody Note note) {
-        note.setId(null);
+        note.setId(null); //sajátot generál az adatb
         return noteRepository.save(note);
     }
 
