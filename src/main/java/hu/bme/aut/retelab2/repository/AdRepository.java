@@ -14,8 +14,8 @@ public class AdRepository {
     private EntityManager eManager;
 
     @Transactional
-    public Ad save(Ad a){
-        return eManager.merge(a);
+    public Ad save(Ad ad){
+        return eManager.merge(ad);
     }
 
 }
